@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Digital Closet Assistant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web-based wardrobe management app built with React and Tailwind CSS. Users can upload and manage clothing items, generate outfit suggestions, create and save favorite outfits, build custom outfits, and interact with an AI assistant.
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+Link: digital-closet-assistant.vercel.app
 
-### `npm start`
+## Folder Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+digital-closet-assistant/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── other static files
+├── src/
+│   ├── App.js
+│   ├── AddItemForm.js
+│   ├── Chatbot.js
+│   ├── firebase.js
+│   ├── index.js
+│   └── index.css
+├── .env
+├── .gitignore
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── README.md
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Add wardrobe items with name, category, color, occasion, season, and image
+- Image upload via drag-and-drop (Firebase Storage)
+- Suggest outfits based on filters
+- Save favorite outfits
+- Build custom outfits from wardrobe items
+- AI assistant for style suggestions
+- Dark mode toggle
+- LocalStorage for data persistence
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- React
+- Tailwind CSS
+- Firebase (Storage)
+- OpenAI API (Chatbot)
+- Vercel (Hosting)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation Instructions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   git clone https://github.com/mohammedtmiah/Digital-Closet-Assistant
+   cd digital-closet-assistant
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
+   npm install
 
-### `npm run eject`
+3. Run the app:
+   npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Testing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Add items
+- Use filters and suggest outfit feature
+- Save and remove favorite outfits
+- Create custom outfits
+- Use the chatbot
+- Toggle dark/light mode
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is intended for educational purposes only.
