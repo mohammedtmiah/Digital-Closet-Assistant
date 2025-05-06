@@ -1,5 +1,5 @@
 
-// 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
+
 
 // Import useState hook from React
 import { useState } from "react";
@@ -57,7 +57,7 @@ const Chatbot = ({ items }) => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer sk-proj-...`, // Your API key
+          Authorization: `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`,
         },
         body: JSON.stringify({
           model: "gpt-3.5-turbo",
